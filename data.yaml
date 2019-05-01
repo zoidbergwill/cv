@@ -1,0 +1,112 @@
+name: William Stewart
+jobTitle: Software Engineer
+location: Cape Town, South Africa
+phoneNumber: (+27)83 715 7499
+emailAddress: zoidbergwill@gmail.com
+githubURL: github.com/zoidbergwill
+linkedInURL: linkedin.com/in/zoidbergwill
+lastUpdated: 02-04-2017
+summary:
+- Primary focus on a DevOps approach in engagements, taking into consideration internal tooling and site reliability engineering. In combination with this, extensive experience in backend and frontend development.
+- Most proficient with Python and Kubernetes, but experience using PHP, Java, Bash, Delphi, and JavaScript.
+- Future focus on technical growth, alongside working towards a stronger leadership role - with a goal towards a leadership position of technical team lead.
+selectedProjects:
+- Built a simple platform of reusable Bash scripts for doing migrations, deploys, running tests, and doing local development, on a Kubernetes environment.
+- Migrated a legacy PHP project into Docker and Kubernetes, combined with enabling local development to be almost identical to production - thus minimizing time and effort for taking new development into production
+- Built a highly available robust service for storing inbound webhooks, using Kafka <br>and Flask.
+
+presentations:
+- title: A Journey into Kubernetes, and how it helps us
+  event: ScaleConf
+  year: 2017
+- title: Laravel, Docker, and Kubernetes
+  event: Cape Town PHP Meetup
+  year: 2017
+- title: "Lightning Talk: Minikube"
+  event: DevOpsDaysCPT
+  year: 2016
+- title: "Lightning Talk: Jinja2 CLI"
+  event: PyConZA
+  year: 2016
+- title: Starting with Kubernetes 1.2
+  event: Cape Town DevOps Meetup
+  year: 2016
+
+experience:
+- title: Site Reliability / Ops Team Lead
+  date: Jul 2018 - April 2018
+  company: Superbalist
+- title: Developer
+  date: Oct 2015 - Jun 2016
+  company: Superbalist
+- title: Systems and Services Engineer
+  date: Feb 2014 - Sept 2015
+  company: Yola
+- title: Python Software Developer Intern
+  date: Nov 2013 - Jan 2014
+  company: Yola
+- title: Python Software Developer Intern
+  date: Jun 2013 - Jul 2013
+  company: Umonya
+
+education:
+- title: Bachelor of Science (Incomplete)
+  startDate: 2012
+  endDate: 2014
+  location: University of Cape Town, South Africa
+- title: National Senior Certificate
+  startDate: 2007
+  endDate: 2011
+  location: Hudson Park High School, East London, South Africa
+
+organisations:
+- title: French Horn Player
+  startDate: 2017
+  endDate: 2019
+  location: Cape Town Rifles (Dukes) Military Band
+- title: Organiser - Budget
+  startDate: 2014
+  endDate: 2017
+  location: PyConZA
+- title: Volunteer
+  startDate: 2016
+  endDate: 2016
+  location: DevOpsDays Cape Town
+- title: Organiser (Unfortunately Cancelled)
+  startDate: 2016
+  endDate: 2016
+  location: AlterConf Cape Town
+- title: CS:GO Server Administrator
+  startDate: 2015
+  endDate: 2016
+  location: OrenaZA</h3>
+- title: Joomla Site Administrator
+  startDate: 2013
+  endDate: 2014
+  location: Clear Cut Productions
+- title: TF2 Server Administrator and Community Manager
+  startDate: 2011
+  endDate: 2013
+  location: MWEB Gamezone
+- title: IT Committee <small>(Windows/Linux Support)
+  startDate: 2013
+  endDate: 2013
+  location: Leo Marquard Hall, University of Cape Town
+- title: French Horn Player
+  startDate: 2004
+  endDate: 2009
+  location: Gules Aquila Brass Band
+
+references:
+- name: Gary Krige
+  title: Site Reliability Engineer
+  location: Superbalist
+  phoneNumber: (+27)83 357 8515
+- name: Bearnard Hibbins
+  title: Site Reliability Engineer Team Lead
+  location: Praekelt.org Foundation
+  phoneNumber: (+27)72 607 8747
+- name: Professor Peter Vale
+  title: Professor of Humanities
+  location: University of Johannesburg
+  phoneNumber: (+27)11 482 3300 or (+27)84 801 8019

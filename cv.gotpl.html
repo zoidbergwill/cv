@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en" class="wf-roboto-n4-active wf-alegreya-n4-active wf-active">
+
+<head>
+  <meta charset="utf-8">
+  <!--<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">-->
+  <link rel="stylesheet" href="/lib/font-awesome.css">
+  <link rel="stylesheet" href="/lib/simple-grid.css">
+  <title>
+    {{ .name }}
+  </title>
+  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Alegreya%7CRoboto" media="all">
+</head>
+
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-6-sm" id="title">
+        <h1 style="font-size: 48px; -webkit-margin-before: 0em; -webkit-margin-after: 0em;">
+          {{ .name }}
+        </h1>
+        <h3 style="font-size: 32px; -webkit-margin-before: 0em; -webkit-margin-after: 0em;">
+          {{ .jobTitle }}
+        </h3>
+      </div>
+      <div class="col-6-sm" id="contact_details">
+        <p><i class="fa fa-home" aria-hidden="true"></i>
+          {{ .location }}
+        </p>
+        <p><i class="fa fa-phone" aria-hidden="true"></i>
+          {{ .phoneNumber }}
+        </p>
+        <p><i class="fa fa-envelope-o" aria-hidden="true"></i>
+          {{ .emailAddress }}
+        </p>
+        <p><i class="fa fa-github" aria-hidden="true"></i>
+          {{ .githubURL }}
+        </p>
+        <p><i class="fa fa-linkedin" aria-hidden="true"></i>
+          {{ .linkedInURL }}
+        </p>
+      </div>
+      <div class="col-12-sm main">
+        <div class="row">
+          <div class="col-12-sm">
+            {{- range .summary }}
+            <p>
+              {{ . }}
+            </p>
+            {{- end }}
+
+            <h1 id="projects">Selected Projects</h1>
+            <p>
+              <ul>
+                {{- range .selectedProjects }}
+                <li>
+                  {{ . }}
+                </li>
+                {{- end }}
+              </ul>
+            </p>
+          </div>
+          <div class="col-12-sm">
+            <h1>Presentations</h1>
+          </div>
+          {{- range $i, $_ := .presentations }}
+          <div class="col-5-sm">
+            {{ .title }}
+          </div>
+          <div class="col-5-sm">
+            {{ .event }}
+          </div>
+          <div class="col-2-sm right green" {{ if eq $i 4 }}style="margin-bottom: 200px"{{end}}>
+            {{ .year }}
+          </div>
+          {{- end }}
+          <div class="col-12-sm">
+            <h1 id="experience">Experience</h1>
+          </div>
+          {{- range $i, $_ := .experience }}
+          <div class="col-8-sm">
+              <h2>
+                {{ .title }}
+              </h2>
+          </div>
+          <div class="col-4-sm right">
+            <h3>
+                {{ .date }}
+            </h3>
+          </div>
+          <div class="col-12-sm">
+            <h3>
+              {{ .company }}
+            </h3>
+          </div>
+          {{- end }}
+        </div>
+
+        <div class="row">
+          <div class="col-12-sm">
+            <h1 id="education">Education</h1>
+          </div>
+          {{- range $i, $_ := .education }}
+          <div class="col-8-sm">
+            <h2>
+              {{ .title }}
+            </h2>
+          </div>
+          <div class="col-4-sm right">
+            <h3>
+              {{ .startDate }} - {{ .endDate }}
+            </h3>
+          </div>
+          <div class="col-12-sm">
+            <h3>
+              {{ .location }}
+            </h3>
+          </div>
+          {{- end }}
+          <div class="col-12-sm">
+            <h1 id="professional-organisations">Professional Organisations</h1>
+          </div>
+          {{- range $i, $_ := .organisations }}
+          <div class="col-8-sm">
+            <h2>
+              {{ .title }}
+            </h2>
+          </div>
+          <div class="col-4-sm right">
+            <h3>
+              {{ .startDate }} - {{ .endDate }}
+            </h3>
+          </div>
+          <div class="col-12-sm">
+            <h3>
+              {{ .location }}
+            </h3>
+          </div>
+          {{- end }}
+        </div>
+
+        <h1 id="references">References</h1>
+        {{- range $i, $_ := .references }}
+        <p>
+          <span class="green">
+            {{ .name }}
+          </span>
+          <br>
+          {{ .title }}
+          <br>
+          {{ .location }}
+          <br>
+          {{ .phoneNumber }}
+        </p>
+        {{- end }}
+        <p class="center">Last updated: {{ .lastUpdated }}</p>
+      </div>
+    </div>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.16/webfont.js"></script>
+  <script>
+    WebFont.load({
+      google: {
+        families: ['Alegreya', 'Roboto']
+      }
+    });
+  </script>
+</body>
+
+</html>
